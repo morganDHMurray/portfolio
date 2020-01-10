@@ -1,0 +1,33 @@
+{
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": ["react-hooks"],
+    "parserOptions": {
+      "ecmaVersion": 2018, // Allows for the parsing of modern ECMAScript features
+      "sourceType": "module", // Allows for the use of imports
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
+      // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+      "prettier/prettier": "error",
+      "react/prop-types": [
+        2,
+        {
+          "skipUndeclared": true
+        }
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    },
+    "settings": {
+      "react": {
+        "pragma": "React", // Pragma to use, default to "React"
+        "version": "detect" // React version. "detect" automatically picks the version you have installed.
+      }
+    }
+  }

@@ -1,3 +1,69 @@
+:root {
+  --red: #CA0D06;
+}
+
+body {
+  margin: 0;
+}
+
 .bearimg {
-  width: 500px;
+  width: 100%;
+  height: auto;
+  grid-column: col-start 4 / span 6;
+}
+
+.layout-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-rows: 1fr [footer] 100px;
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+  grid-column: col-start 3 / span 8;
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  padding: 2rem 0;
+}
+
+.footer {
+  grid-row: footer / 3;
+}
+
+.header {
+  grid-column: col-start 1 / span 2;
+}
+
+.header ul {
+  list-style-type: none;
+  color: var(--red);
+  font-family: 'Patua One', cursive;
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0.125rem;
+}
+
+.triangle {
+  grid-column: col-start 1 / span 12;
+  height: auto;
+}
+
+.triangle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.triangle-top {
+  background-image: linear-gradient(to bottom right, white 50%, #EDE7DF 50% 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.triangle-bottom {
+  background-image: linear-gradient(to top left, white 50%, #EDE7DF 50% 100%);
+  width: 100vw;
+  height: 100vh;
 }

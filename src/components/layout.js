@@ -8,7 +8,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import TriangleSVG from '../images/triangle.svg';
 import './layout.css';
 
 const Triangle = () => {

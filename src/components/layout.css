@@ -42,15 +42,21 @@ body {
 
 .header {
   grid-column: col-start 1 / span 2;
+  position: fixed;
+  top: 0;
 }
 
 .header ul {
   list-style-type: none;
-  color: var(--red);
   font-family: 'Patua One', cursive;
   font-size: 1.5rem;
   line-height: 2;
   letter-spacing: 0.125rem;
+}
+
+.header a {
+  color: var(--red);
+  text-decoration: none;
 }
 
 .triangle {
@@ -107,3 +113,4 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 2rem;
 }
+

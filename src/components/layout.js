@@ -25,7 +25,9 @@ const Layout = ({ children }) => {
       <Triangle></Triangle>
       <header className="header">
         <ul>
-          <li>About</li>
+          <li>
+            <a href="#about">About me</a>
+          </li>
           <li>Skills</li>
           <li>Projects</li>
           <li>Contact</li>

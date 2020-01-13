@@ -28,7 +28,9 @@ const Layout = ({ children }) => {
           <li>
             <a href="#about">About me</a>
           </li>
-          <li>Skills</li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
           <li>Projects</li>
           <li>Contact</li>
         </ul>

@@ -9,6 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import '../css/layout.css';
+import '../css/typography.css';
 
 const Triangle = () => {
   return (
@@ -22,7 +23,7 @@ const Triangle = () => {
 const Layout = ({ children }) => {
   return (
     <div className="layout-grid">
-      <Triangle></Triangle>
+      <Triangle />
       <header className="header">
         <ul>
           <li>

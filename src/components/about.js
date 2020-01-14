@@ -7,7 +7,7 @@ const About = () => (
   <div className="about-container" id="about">
     <AboutIMG />
     <div className="about-content">
-      <SectionTitle>About me.</SectionTitle>
+      <SectionTitle>About.</SectionTitle>
       <SectionParagraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec

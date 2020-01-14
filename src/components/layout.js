@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       <header className="header">
         <ul>
           <li>
-            <a href="#about">About me</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#skills">Skills</a>

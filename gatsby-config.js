@@ -21,7 +21,7 @@ module.exports = {
       options: {
         name: `Morgan Murray Portfolio`,
         short_name: `Portfolio`,
-        start_url: `/portfolio`,
+        start_url: `.`,
         background_color: `#ffffff`,
         theme_color: `#D94C47`,
         display: `standalone`,

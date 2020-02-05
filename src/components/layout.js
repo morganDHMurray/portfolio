@@ -32,7 +32,9 @@ const Layout = ({ children }) => {
           <li>
             <a href="#skills">Skills</a>
           </li>
-          <li>Projects</li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
           <li>Contact</li>
         </ul>
       </header>

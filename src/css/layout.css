@@ -1,5 +1,8 @@
 :root {
-  --red: #D94C47;
+  --red: #D15D59;
+}
+:root {
+  --font: 'Patua One', cursive;
 }
 
 body {
@@ -67,7 +70,7 @@ body {
 
 .header ul {
   list-style-type: none;
-  font-family: 'Patua One', cursive;
+  font-family: var(--font);
   font-size: 1.5rem;
   line-height: 2;
   letter-spacing: 0.125rem;
@@ -162,7 +165,7 @@ body {
 
 .section-title {
   color: var(--red);
-  font-family: 'Patua One', cursive;
+  font-family: var(--font);
   font-size: 2rem;
   letter-spacing: 0.125rem;
 }
@@ -202,7 +205,7 @@ body {
   width: 8rem;
   margin-top: 1rem;
   color: var(--red);
-  font-family: 'Patua One', cursive;
+  font-family: var(--font);
   text-align: center;
 }
 
@@ -215,9 +218,25 @@ body {
 }
 
 .project-box {
+  display: flex;
   background-color: white;
   box-shadow: 1px 2px 8px  rgba(0, 0, 0, .1);
   border: 1px solid #eaeaea;
-  height: 20rem;
 }
 
+.dashboard-img {
+  width: 50%;
+}
+
+.project-heading {
+  color: var(--red);
+  font-family: var(--font);
+  padding: 2rem 0rem 0rem 2rem;
+  
+}
+
+.project-paragraph {
+  color: var(--red);
+  font-family: 'Lato', sans-serif;
+  padding: 2rem 0rem 0rem 2rem;
+}

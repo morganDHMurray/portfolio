@@ -79,7 +79,7 @@ body {
 
 @media only screen and (max-width: 480px){
   .header {
-    bottom: 0.5rem;
+    bottom: 0.75rem;
     top: auto;
     grid-column: col-start 1 / span 12;
     width: 100%;

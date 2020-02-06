@@ -7,7 +7,7 @@ import ProjectParagraph from './project-paragraph';
 
 const ProjectLoan = () => {
   return (
-    <div className="project-box">
+    <div className="project-box project-loan">
       <div className="project-copy">
         <ProjectTitle> Loan selection </ProjectTitle>
         <ProjectParagraph>

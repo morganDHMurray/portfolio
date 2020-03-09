@@ -334,7 +334,7 @@ body {
 @media only screen and (max-width: 480px) {
   .skills-card {
     flex: 0 0 auto;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     width: 90%;
     margin-right: 5%;
     margin-left: 2%;

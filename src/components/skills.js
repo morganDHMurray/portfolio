@@ -9,7 +9,6 @@ import Research from '../images/research.svg';
 const Skills = () => {
   return (
     <div className="skills-container" id="skills">
-      <SectionTitle>Skills.</SectionTitle>
       <div className="skills-box">
         <div>
           <img src={Research} alt="Icon of magnifying glass" />

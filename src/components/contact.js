@@ -9,7 +9,9 @@ const Contact = () => {
       <SectionParagraph> Hey please get in touch</SectionParagraph>
       <div className="form-container">
         <form>
+          <label>Name</label>
           <input type="text"></input>
+          <label>Email</label>
           <input type="text"></input>
         </form>
       </div>

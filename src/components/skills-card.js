@@ -2,13 +2,11 @@ import React from 'react';
 import SkillsLabel from './skill-label';
 import SkillsDescription from './skills-description';
 
-const SkillsCard = () => {
+const SkillsCard = ({ children, header, description }) => {
   return (
     <div className="skills-card">
-      <div>
-        <SkillsLabel>UX research</SkillsLabel>
-        <SkillsDescription>More words here</SkillsDescription>
-      </div>
+      <SkillsLabel>{header}</SkillsLabel>
+      <SkillsDescription>{description}</SkillsDescription>
     </div>
   );
 };

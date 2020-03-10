@@ -237,8 +237,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .project-box {
-    flex-direction: column;
-    height: 40rem;
+    flex-direction: column; 
   }
 }
 
@@ -325,7 +324,7 @@ body {
 .skills-card {
   height: 16rem;
   background-color: white;
-  width: 12rem;
+  width: 16rem;
   box-shadow: 1px 2px 8px  rgba(0, 0, 0, .1);
   border: 1px solid #eaeaea;
   border-radius: 15px;

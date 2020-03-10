@@ -230,7 +230,7 @@ body {
   box-shadow: 1px 2px 8px  rgba(0, 0, 0, .1);
   border: 1px solid #eaeaea;
   border-radius: 20px;
-  margin: 2rem 0rem 2rem 0rem;
+  margin: 2rem 0rem 4rem 0rem;
   animation-name: fadeInDown;
   animation-duration: 2s;
 }
@@ -264,6 +264,12 @@ body {
   color: var(--red);
   font-family: 'Lato', sans-serif;
   padding: 2rem 0rem 0rem 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .project-paragraph {
+    padding: 2rem;
+  }
 }
 
 .project-copy {
@@ -337,6 +343,7 @@ body {
     width: 90%;
     margin-right: 5%;
     margin-left: 2%;
+    height: 20rem;
   }
 }
 

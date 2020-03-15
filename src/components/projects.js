@@ -7,7 +7,7 @@ import SectionTitle from './section-title';
 const Projects = () => {
   return (
     <div className="projects" id="projects">
-      <SectionTitle>Projects.</SectionTitle>
+      <SectionTitle>Projects</SectionTitle>
       <ProjectDash />
       <ProjectLoan />
     </div>

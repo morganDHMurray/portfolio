@@ -2,19 +2,20 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Bear from '../components/bear';
 import About from '../components/about';
-import SkillsAlt from '../components/skills-alt';
+import Skills from '../components/skills';
 import Projects from '../components/projects';
 import Contact from '../components/contact';
+import Heading from '../components/bear';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Bear />
+    <Heading />
     <About />
-    <SkillsAlt />
+    <Skills />
     <Projects />
+    <Contact />
   </Layout>
 );
 

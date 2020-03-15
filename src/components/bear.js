@@ -1,13 +1,12 @@
 import React from 'react';
 
-import BearSVG from '../images/bear.svg';
-
-const Bear = () => {
+const Heading = () => {
   return (
-    <div className="bear-container">
-      <img src={BearSVG} alt="red bear of dreams" className="bearimg" />
+    <div className="heading-container">
+      <p className="main-heading">Morgan Murray</p>
+      <p className="sub-heading">Digital Design</p>
     </div>
   );
 };
 
-export default Bear;
+export default Heading;

@@ -11,31 +11,39 @@ const Skills = () => {
     <div className="skills-container" id="skills">
       <SectionTitle>Skills</SectionTitle>
       <div className="skills-carousel-container" id="skills">
-        <SkillsCard header="UX research" description="more words">
+        <SkillsCard
+          header="UX research"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        >
           <div>
             <img src={Research} alt="Icon of magnifying glass" />
-            <p>UX Research</p>
           </div>
         </SkillsCard>
 
-        <SkillsCard header="UI design" description="more words">
+        <SkillsCard
+          header="UI / UX design"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        >
           <div>
             <img src={WebDesignSVG} alt="Icon of web design" />
-            <p>UI UX</p>
           </div>
         </SkillsCard>
 
-        <SkillsCard header="Skill here" description="more words">
+        <SkillsCard
+          header="Skill here"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        >
           <div>
             <img src={PostItSVG} alt="Icon of web design" />
-            <p>Skill here</p>
           </div>
         </SkillsCard>
 
-        <SkillsCard header="Front end development" description="more words">
+        <SkillsCard
+          header="Front end development"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        >
           <div>
             <img src={BrowserSVG} alt="Icon of internet browser" />
-            <p>Front-end web</p>
           </div>
         </SkillsCard>
       </div>

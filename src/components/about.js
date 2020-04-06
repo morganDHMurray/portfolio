@@ -16,11 +16,7 @@ const About = () => (
         nec feugiat in. Tempus quam pellentesque nec nam. Felis donec et odio
         pellentesque diam volutpat commodo. Purus in massa tempor nec feugiat
         nisl. Arcu dictum varius duis at consectetur lorem donec massa sapien.
-        Augue ut lectus arcu bibendum at varius vel pharetra vel. Non blandit
-        massa enim nec. Enim nec dui nunc mattis enim ut tellus elementum
-        sagittis. Elementum facilisis leo vel fringilla est ullamcorper eget
-        nulla. Arcu ac tortor dignissim convallis aenean. Elit scelerisque
-        mauris pellentesque pulvinar pellentesque habitant morbi.
+        Augue ut lectus arcu bibendum at varius vel pharetra vel.
       </SectionParagraph>
     </div>
   </div>

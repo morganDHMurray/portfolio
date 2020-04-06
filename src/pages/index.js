@@ -6,7 +6,7 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import Projects from '../components/projects';
 import Contact from '../components/contact';
-import Heading from '../components/bear';
+import Heading from '../components/page-heading';
 
 const IndexPage = () => (
   <Layout>

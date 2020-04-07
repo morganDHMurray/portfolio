@@ -50,6 +50,11 @@
   }
 }
 
+a {
+color: var(--red);
+font-weight: bold;
+}
+
 body {
   margin: 0;
 }
@@ -395,12 +400,19 @@ body {
   grid-template-columns: repeat(12, [col-start] 1fr);
 }
 
+@media only screen and (max-width: 480px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-content {
   grid-column: col-start 1 / span 5;
 }
 
 .form-container {
   grid-column: col-start 7 / span 6;
+  margin-top: 5rem;
 }
 
 .form-buttons {
@@ -454,4 +466,14 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 480px) {
+  .contact-content {
+    grid-column: col-start 1 / 2;
+
+  }
+  .form-container {
+    grid-column: col-start 1 / 2;
+    margin-top: 0;
+  }
+}
 

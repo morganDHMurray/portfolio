@@ -6,7 +6,7 @@ import SectionTitle from './section-title';
 
 const Projects = () => {
   return (
-    <div className="projects" id="projects">
+    <div className="projects" id="projects" data-aos="fade-down">
       <SectionTitle>Projects</SectionTitle>
       <ProjectDash />
       <ProjectLoan />

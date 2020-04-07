@@ -10,6 +10,14 @@ import PropTypes from 'prop-types';
 
 import '../css/layout.css';
 import '../css/typography.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  duration: 1000,
+  delay: 100,
+  easing: 'ease-in-out',
+});
 
 const Layout = ({ children }) => {
   return (

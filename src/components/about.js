@@ -4,7 +4,7 @@ import SectionTitle from './section-title';
 import SectionParagraph from './section-paragraph';
 
 const About = () => (
-  <div className="about-container" id="about">
+  <div className="about-container" id="about" data-aos="fade-down">
     <AboutIMG />
     <div className="about-content">
       <SectionTitle>About</SectionTitle>

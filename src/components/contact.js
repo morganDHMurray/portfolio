@@ -7,9 +7,18 @@ import TextField from './text-field';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <SectionTitle>Contact</SectionTitle>
-      {/* <SectionParagraph> Hey please get in touch</SectionParagraph> */}
+    <div className="contact-container" data-aos="fade-down">
+      <div className="contact-content">
+        <SectionTitle>Contact</SectionTitle>
+        <SectionParagraph>
+          {' '}
+          Feel free to get in contact via my{' '}
+          <a href="https://www.linkedin.com/in/morgan-murray-9151b7155/">
+            Linked In
+          </a>{' '}
+          page or through the form to the right. Book reccommendations welcome!
+        </SectionParagraph>
+      </div>
       <form className="form-container" method="post" action="#">
         <TextField>
           Name

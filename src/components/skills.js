@@ -8,7 +8,7 @@ import Research from '../images/research.svg';
 
 const Skills = () => {
   return (
-    <div className="skills-container" id="skills">
+    <div className="skills-container" id="skills" data-aos="fade-down">
       <SectionTitle>Skills</SectionTitle>
       <div className="skills-carousel-container" id="skills">
         <SkillsCard

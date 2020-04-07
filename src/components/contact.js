@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <SectionTitle>Contact</SectionTitle>
-      <SectionParagraph> Hey please get in touch</SectionParagraph>
+      {/* <SectionParagraph> Hey please get in touch</SectionParagraph> */}
       <form className="form-container" method="post" action="#">
         <TextField>
           Name

@@ -9,14 +9,14 @@ const About = () => (
     <div className="about-content">
       <SectionTitle>About</SectionTitle>
       <SectionParagraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec
-        feugiat nisl pretium fusce id velit. Eu sem integer vitae justo eget
-        magna fermentum. Sed adipiscing diam donec adipiscing tristique risus
-        nec feugiat in. Tempus quam pellentesque nec nam. Felis donec et odio
-        pellentesque diam volutpat commodo. Purus in massa tempor nec feugiat
-        nisl. Arcu dictum varius duis at consectetur lorem donec massa sapien.
-        Augue ut lectus arcu bibendum at varius vel pharetra vel.
+        Perth-based Designer specialising in User Interface & Experience Design
+        and UX Research. I love using Design Thinking and Human Centred Design
+        approaches to solve business problems and help build the right products.
+        My design style is very minimalist and I enjoy turning complex processes
+        into simple, usable solutions. Industries I have experience workings
+        with include mining, health and financial services. When I&apos;m not
+        doing Design work I&apos;m usually reading about Design, watching
+        architecture shows or trying (and failing) to learn another language.
       </SectionParagraph>
     </div>
   </div>

@@ -22,20 +22,30 @@ AOS.init({
 const Layout = ({ children }) => {
   return (
     <div className="layout-grid">
-      <header className="header">
+      <nav className="nav">
         <ul>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">
+              <span className="nav-number">01</span>About
+            </a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">
+              <span className="nav-number">02</span>Skills
+            </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects">
+              <span className="nav-number">03</span>Projects
+            </a>
           </li>
-          <li>Contact</li>
+          <li>
+            <a href="#contact">
+              <span className="nav-number">04</span>Contact
+            </a>
+          </li>
         </ul>
-      </header>
+      </nav>
       <main className="main">{children}</main>
       <footer className="footer"></footer>
     </div>

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --red: #de6661;
   --beige: #EDE7DF;
@@ -62,7 +66,7 @@ body {
 .layout-grid {
   display: inline-grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-template-rows: 1fr [footer] 10rem;
+  grid-template-rows: 1fr [footer] 6rem;
   width: 100%;
   margin: 0;
   background-color: var(--beige);
@@ -78,7 +82,7 @@ body {
 }
 
 .main > div {
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -86,7 +90,7 @@ body {
     grid-column: col-start 2 / span 10;
   }
   .main > div {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -94,22 +98,33 @@ body {
   grid-row: footer / 3;
 }
 
-.header {
+.nav {
   position: fixed;
   top: 0;
 }
 
-.header ul {
+.nav ul {
   list-style-type: none;
   font-family: var(--body-font);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2;
   color: grey;
 }
 
+.nav-number {
+  font-family: var(--display-font);
+  margin-right: 1rem;
+}
+
 @media only screen and (max-width: 480px){
-  .header {
+.nav-number {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 480px){
+  .nav {
     width: calc(100vw - 1rem);
     left: 0.5rem;
     bottom: 0.75rem;
@@ -120,11 +135,11 @@ body {
     border-radius: 40px;
   }
 
-  .header li {
+  .nav li {
     display: inline;
   }
 
-  .header ul {
+  .nav ul {
     display: flex;
     justify-content: space-around;
     font-size: 1rem;
@@ -133,7 +148,29 @@ body {
   }
 }
 
-.header a {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .nav {
+    width: 100%;
+    top: 0;
+    background-color: var(--beige);
+    box-shadow: var(--neomorph);
+    z-index: 10;
+  }
+
+  .nav li {
+    display: inline;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+.nav a {
   color: var(--red);
   text-decoration: none;
 }
@@ -149,8 +186,13 @@ body {
 
 @media only screen and (max-width: 480px) {
   .heading-container {
-    width: 90%;
     align-content: flex-start;
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .heading-container {
     text-align: right;
   }
 }
@@ -159,7 +201,6 @@ body {
   font-family: var(--display-font);
   color: var(--red);
   font-size: 6rem;
-  letter-spacing: 0.2rem;
   margin-bottom: 0;
 }
 
@@ -169,17 +210,28 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .main-heading {
+    font-size: 4rem;
+  }
+}
+
 .sub-heading {
   font-family: var(--display-font);
   color: white;
   font-size: 6rem;
   margin-top: 0;
-  letter-spacing: 0.2rem;
 }
 
 @media only screen and (max-width: 480px) {
   .sub-heading {
     font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .sub-heading {
+    font-size: 4rem;
   }
 }
 
@@ -190,6 +242,12 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .about-container {
     grid-template-columns: 1fr;
   }
@@ -206,6 +264,18 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  .about-img {
+    grid-column: col-start 1 / 2;
+    grid-row: row-start 1 / 2;
+
+  }
+  .about-content {
+    grid-column: col-start 1 / 2;
+    grid-row: row-start 2 / 3;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .about-img {
     grid-column: col-start 1 / 2;
     grid-row: row-start 1 / 2;
@@ -260,12 +330,18 @@ body {
 }
 }
 
+@media only screen and (min-width: 481px) {
+  .skills-carousel-container {
+  flex-wrap: wrap;
+}
+}
+
 .skills-card {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #EDE7DF;
-  width: 16rem;
+  width: 22%;
   box-shadow: 6px 6px 8px  rgba(0, 0, 0, 0.1), -3px -3px 16px  rgba(255, 255, 255, 0.75);
   border-radius: 15px;
 }
@@ -277,6 +353,13 @@ body {
     width: 90%;
     margin-right: 5%;
     margin-left: 2%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .skills-card {
+    width: 45%;
+    margin-bottom: 5%;
   }
 }
 
@@ -319,7 +402,7 @@ body {
   box-shadow: 6px 6px 8px  rgba(0, 0, 0, 0.1), -3px -3px 16px  rgba(255, 255, 255, 0.75);
   border: 1px solid #eaeaea;
   border-radius: 20px;
-  margin: 2rem 0rem 4rem 0rem;
+  margin: 2rem 0rem 0rem 0rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -406,6 +489,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-content {
   grid-column: col-start 1 / span 5;
 }
@@ -467,6 +556,17 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  .contact-content {
+    grid-column: col-start 1 / 2;
+
+  }
+  .form-container {
+    grid-column: col-start 1 / 2;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .contact-content {
     grid-column: col-start 1 / 2;
 

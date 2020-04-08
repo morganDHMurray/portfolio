@@ -7,7 +7,7 @@ import TextField from './text-field';
 
 const Contact = () => {
   return (
-    <div className="contact-container" data-aos="fade-down">
+    <div className="contact-container" id="contact" data-aos="fade-down">
       <div className="contact-content">
         <SectionTitle>Contact</SectionTitle>
         <SectionParagraph>

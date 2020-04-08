@@ -14,13 +14,28 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Scrollspy from 'react-scrollspy';
 // ..
-AOS.init({
-  duration: 1000,
-  delay: 100,
-  easing: 'ease-in-out',
-});
 
 const Layout = ({ children }) => {
+  let AOS;
+  useEffect(() => {
+    /**
+     * Server-side rendering does not provide the 'document' object
+     * therefore this import is required either in useEffect or componentDidMount as they
+     * are exclusively executed on a client
+     */
+    const AOS = require('aos');
+    AOS.init({
+      duration: 1000,
+      delay: 100,
+      easing: 'ease-in-out',
+    });
+  }, []);
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
+
   return (
     <div className="layout-grid">
       {/*<div>
@@ -33,6 +48,7 @@ const Layout = ({ children }) => {
           <Scrollspy
             items={['about', 'skills', 'projects', 'contact']}
             currentClassName="is-current"
+            offset="50"
           >
             <li>
               <a href="#about">

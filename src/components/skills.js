@@ -1,7 +1,7 @@
 import React from 'react';
 import SkillsCard from './skills-card';
 import SectionTitle from './section-title';
-import BrowserSVG from '../images/browser.svg';
+import DiagramSVG from '../images/diagram.svg';
 import PostItSVG from '../images/post-it.svg';
 import WebDesignSVG from '../images/web-design.svg';
 import Research from '../images/research.svg';
@@ -30,7 +30,7 @@ const Skills = () => {
         </SkillsCard>
 
         <SkillsCard
-          header="Skill here"
+          header="Design thinking process"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         >
           <div>
@@ -39,11 +39,11 @@ const Skills = () => {
         </SkillsCard>
 
         <SkillsCard
-          header="Front end development"
+          header="Information architecture"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         >
           <div>
-            <img src={BrowserSVG} alt="Icon of internet browser" />
+            <img src={DiagramSVG} alt="Icon of internet browser" />
           </div>
         </SkillsCard>
       </div>

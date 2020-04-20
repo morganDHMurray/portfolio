@@ -1,10 +1,10 @@
 import React from 'react';
 import SkillsCard from './skills-card';
 import SectionTitle from './section-title';
-import DiagramSVG from '../images/diagram.svg';
-import PostItSVG from '../images/post-it.svg';
-import WebDesignSVG from '../images/web-design.svg';
-import Research from '../images/research.svg';
+import DiagramIcon from './icons/diagram';
+import PostitIcon from './icons/post-it';
+import ResearchIcon from './icons/research';
+import DesignIcon from './icons/design';
 
 const Skills = () => {
   return (
@@ -15,36 +15,28 @@ const Skills = () => {
           header="UX research"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         >
-          <div>
-            <img src={Research} alt="Icon of magnifying glass" />
-          </div>
+          <ResearchIcon></ResearchIcon>
         </SkillsCard>
 
         <SkillsCard
           header="UI / UX design"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         >
-          <div>
-            <img src={WebDesignSVG} alt="Icon of web design" />
-          </div>
+          <DesignIcon></DesignIcon>
         </SkillsCard>
 
         <SkillsCard
           header="Design thinking process"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         >
-          <div>
-            <img src={PostItSVG} alt="Icon of web design" />
-          </div>
+          <PostitIcon></PostitIcon>
         </SkillsCard>
 
         <SkillsCard
           header="Information architecture"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         >
-          <div>
-            <img src={DiagramSVG} alt="Icon of internet browser" />
-          </div>
+          <DiagramIcon></DiagramIcon>
         </SkillsCard>
       </div>
     </div>

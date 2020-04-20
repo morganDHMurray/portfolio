@@ -10,7 +10,7 @@ html {
   --blue: #667DB5;
   --display-font: 'Mogena', serif;
   --body-font: 'Lato', sans serif;
-  --neomorph: 6px 6px 5px  rgba(0, 0, 0, 0.1), -3px -3px 8px  rgba(255, 255, 255, 0.75);
+  --neomorph: 6px 6px 5px  rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 480px) {
@@ -177,7 +177,7 @@ body {
     bottom: 0.75rem;
     top: auto;
     background-color: var(--beige);
-    box-shadow: var(--neomorph);
+    box-shadow: 1px 2px 8px  rgba(0, 0, 0, .1);
     z-index: 10;
     border-radius: 40px;
   }
@@ -203,7 +203,7 @@ body {
     width: 100%;
     top: 0;
     background-color: var(--beige);
-    box-shadow: var(--neomorph);
+    box-shadow: 1px 2px 8px  rgba(0, 0, 0, .1);
     z-index: 10;
   }
 
@@ -397,9 +397,9 @@ li a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #EDE7DF;
+  background-color: white;
   width: 22%;
-  box-shadow: 6px 6px 8px  rgba(0, 0, 0, 0.1), -3px -3px 16px  rgba(255, 255, 255, 0.75);
+  box-shadow: 1px 2px 8px  rgba(0, 0, 0, .1);
   border-radius: 15px;
 }
 
@@ -454,8 +454,8 @@ li a {
 
 .project-box {
   display: flex;
-  background-color: #EDE7DF;
-  box-shadow: 6px 6px 8px  rgba(0, 0, 0, 0.1), -3px -3px 16px  rgba(255, 255, 255, 0.75);
+  background-color: white;
+  box-shadow: 1px 2px 8px  rgba(0, 0, 0, .1);
   border: 1px solid #eaeaea;
   border-radius: 20px;
   margin: 2rem 0rem 0rem 0rem;
@@ -628,8 +628,8 @@ li a {
   border-radius: 0.5rem;
   padding: 0.75rem;
   margin-top: 0.5rem;
-  background-color: #EDE7DF;
-  box-shadow: 6px 6px 8px  rgba(0, 0, 0, 0.1), -3px -3px 16px  rgba(255, 255, 255, 0.75);
+  background-color: white;
+  box-shadow: 1px 2px 8px  rgba(0, 0, 0, .1);
   -webkit-appearance: none;
 }
 

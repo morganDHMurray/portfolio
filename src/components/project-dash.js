@@ -1,6 +1,5 @@
 import React from 'react';
 
-import SectionTitle from './section-title';
 import ProjectTitle from './project-title';
 import DashboardIMG from './dashbord-img';
 import ProjectParagraph from './project-paragraph';
@@ -8,7 +7,9 @@ import ProjectParagraph from './project-paragraph';
 const ProjectDash = () => {
   return (
     <div className="project-box">
-      <DashboardIMG />
+      <div className="coloured-background-dash">
+        <DashboardIMG />
+      </div>
       <div className="project-copy">
         <ProjectTitle> Dashboard Design </ProjectTitle>
         <ProjectParagraph>

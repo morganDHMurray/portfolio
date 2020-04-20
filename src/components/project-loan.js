@@ -1,7 +1,6 @@
 import React from 'react';
 
 import ProjectTitle from './project-title';
-import DashboardIMG from './dashbord-img';
 import LoanIMG from './loan-img';
 import ProjectParagraph from './project-paragraph';
 
@@ -14,7 +13,9 @@ const ProjectLoan = () => {
           A prototype of a loan selection tool made with Adobe XD.
         </ProjectParagraph>
       </div>
-      <LoanIMG />
+      <div className="coloured-background-loan">
+        <LoanIMG></LoanIMG>
+      </div>
     </div>
   );
 };

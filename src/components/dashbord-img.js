@@ -6,7 +6,7 @@ import Img from 'gatsby-image'; // to take image data and render it
 const DashboardIMG = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "dashboard.png" }) {
+      file(relativePath: { eq: "dash-mockup.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid

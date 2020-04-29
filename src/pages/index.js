@@ -23,6 +23,7 @@ const IndexPage = () => {
       duration: 1000,
       delay: 100,
       easing: 'ease-in-out',
+      once: true,
     });
   }, []);
   useEffect(() => {

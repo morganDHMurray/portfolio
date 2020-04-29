@@ -634,6 +634,12 @@ li a {
 }
 
 
+.textfield-label textarea:focus {
+  outline: none !important;
+  background-color: var(--primary);
+  color: white;
+}
+
 .textfield-label input:focus {
   outline: none !important;
   background-color: var(--primary);
@@ -667,4 +673,7 @@ li a {
   font-weight: bold;
   }
   
-
+.project-page-test {
+  height: 100vh;
+  background-color: #de6661;
+}

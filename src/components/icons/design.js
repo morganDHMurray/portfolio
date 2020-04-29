@@ -1,7 +1,7 @@
 import React from 'react';
 
-var iconStyle = {
-  fill: 'var(--primary',
+let iconStyle = {
+  fill: 'var(--primary)',
   // 'ms' is the only lowercase vendor prefix
 };
 

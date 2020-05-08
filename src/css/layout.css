@@ -457,6 +457,14 @@ li a {
   justify-content: space-between;
 }
 
+.projects a {
+  font-family: 'Lato-regular';
+  font-style: italic;
+  color: var(--primary);
+  text-decoration: none;
+  padding: 2rem 0rem 0rem 2rem;
+}
+
 .project-box {
   display: flex;
   background-color: white;

@@ -8,6 +8,7 @@ html {
   --beige: #EDE7DF;
   --grey: #696969;
   --blue: #667DB5;
+  --black: #4E4E4E;
   --display-font: 'Mogena', serif;
   --body-font: 'Lato', sans serif;
   --neomorph: 6px 6px 5px  rgba(0, 0, 0, 0.1);
@@ -100,6 +101,10 @@ background-color: var(--red);
   background-color: var(--blue);
 }
 
+.switch-black-on {
+  background-color: var(--black);
+}
+
 body {
   margin: 0;
 }
@@ -107,7 +112,7 @@ body {
 .layout-grid {
   display: inline-grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-template-rows: 2rem 1fr [footer] 6rem;
+  grid-template-rows: 2rem 1fr [footer] 8rem;
   width: 100%;
   margin: 0;
   background-color: var(--beige);
@@ -673,7 +678,51 @@ li a {
   font-weight: bold;
   }
   
-.project-page-test {
-  height: 100vh;
-  background-color: #de6661;
+  .projects-main {
+    grid-column: col-start 2 / span 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+.project-page-container {
+  width: 100%;
+  display: flex;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+.project-page-title {
+  color: var(--primary);
+  font-family: var(--display-font);
+  font-size: 3rem;
+}
+
+.project-content {
+  width: 70%;
+}
+
+
+.bottom-nav {
+  font-family: var(--display-font);
+  color: var(--primary);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-footer {
+  grid-row: footer / 3;
+  grid-column: col-start 2 / span 10;
+}
+
+.project-layout-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-rows: 2rem 1fr [footer] 8rem;
+  width: 100%;
+  margin: 0;
+  background-color: var(--beige);
 }

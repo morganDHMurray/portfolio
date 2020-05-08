@@ -12,6 +12,7 @@ import '../css/typography.css';
 import Scrollspy from 'react-scrollspy';
 import RedSwitch from './red-switch';
 import BlueSwitch from './blue-switch';
+import BlackSwitch from './black-switch';
 // ..
 
 const Layout = ({ children }) => {
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
         <div className="switch-container">
           <RedSwitch></RedSwitch>
           <BlueSwitch></BlueSwitch>
+          <BlackSwitch></BlackSwitch>
         </div>
         <nav className="nav">
           <ul>
@@ -53,13 +55,7 @@ const Layout = ({ children }) => {
             </Scrollspy>
           </ul>
         </nav>
-        <main
-          className="main"
-          data-barba="container"
-          data-barba-namespace="home"
-        >
-          {children}
-        </main>
+        <main className="main">{children}</main>
         <footer className="footer"></footer>
       </div>
     </body>

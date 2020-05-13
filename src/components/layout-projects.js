@@ -24,15 +24,6 @@ const LayoutProjects = ({ children }) => {
           <BlueSwitch></BlueSwitch>
           <BlackSwitch></BlackSwitch>
         </div>
-        <nav className="nav">
-          <ul>
-            <li>
-              <a href="/">
-                <span className="nav-number">01</span>Home
-              </a>
-            </li>
-          </ul>
-        </nav>
         <main className="projects-main">{children}</main>
         <footer className="projects-footer">
           <BottomNav></BottomNav>

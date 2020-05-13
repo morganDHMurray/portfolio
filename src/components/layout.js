@@ -17,7 +17,7 @@ import BlackSwitch from './black-switch';
 
 const Layout = ({ children }) => {
   return (
-    <body data-barba="wrapper">
+    <body>
       <div className="layout-grid">
         <div className="switch-container">
           <RedSwitch></RedSwitch>

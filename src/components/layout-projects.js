@@ -17,7 +17,7 @@ import BlackSwitch from './black-switch';
 
 const LayoutProjects = ({ children }) => {
   return (
-    <body>
+    <body className="project-body">
       <div className="project-layout-grid">
         <div className="switch-container">
           <RedSwitch></RedSwitch>

@@ -6,6 +6,7 @@ import ProjectPageTitle from '../components/project-page/project-page-title';
 import SectionParagraph from '../components/section-paragraph';
 import BottomNav from '../components/project-page/bottom-nav';
 import ProjectTitle from '../components/project-title';
+import PullParagraph from '../components/project-page/pull-paragraph';
 
 const ProjectsPage = () => {
   return (
@@ -14,21 +15,16 @@ const ProjectsPage = () => {
         <DashboardIMG></DashboardIMG>
         <div className="project-content">
           <ProjectPageTitle>Dashboard</ProjectPageTitle>
-          <ProjectTitle>Concept</ProjectTitle>
-          <SectionParagraph>
-            Concept Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet.
-          </SectionParagraph>
-          <ProjectTitle>Method</ProjectTitle>
+          <PullParagraph>
+            A proof of concept made in Adobe XD that displays financial business
+            information. It was designed in a modular grid, with each card
+            featuring a type of data visualization.
+          </PullParagraph>
           <SectionParagraph>
             Method Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
             diam nonumy eirmod tempor invidunt ut labore et dolore magna
             aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus est Lorem ipsum dolor sit amet.
+            duo dolores et ea rebum.
           </SectionParagraph>
         </div>
       </ProjectPageContainer>
